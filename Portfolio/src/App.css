@@ -5,6 +5,7 @@
   flex-direction: column;
   background-color: #3A3A3A;
   width: 100%;
+  color: white;
   --card-grey: #414141;
   --background-grey: #3a3a3a;
   --accent-blue: #6983FF;
@@ -38,9 +39,10 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: row;
 }
 
-.headerContainer>ul>li {
+.headerContainer>ul>li>a {
   font-size: 24px;
   padding: 0 80px 0 0;
+  color: white;
 }
 
 .main {
@@ -60,8 +62,9 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: row;
 }
 
-i {
-  font-size: 50px;
+.introLinks>i {
+  color: white;
+  font-size: 58px;
 }
 
 .card {
@@ -112,7 +115,7 @@ span {
   color: var(--accent-blue);
 }
 
-/* Introduction section end here */
+/* Divider Styles */
 
 .horizontalLine {
   border-top: 4px solid var(--accent-blue);
@@ -129,7 +132,7 @@ span {
   color: var(--accent-blue);
 }
 
-/* Divider section end here */
+/* About Me Styles */
 
 .aboutMeCard {
   box-sizing: border-box;
@@ -138,8 +141,7 @@ span {
   padding: 90px 64px;
   border-radius: 16px;
   font-family: "Poppins-Regular";
-  margin-left: 10%;
-  margin-right: 5%;
+  margin-left: -128px;
 }
 
 .aboutMeCard>p {
@@ -147,12 +149,105 @@ span {
 }
 
 .aboutMe {
-  justify-content: end;
-  align-items: center;
+  justify-content: center;
 }
 
-/* About me section end here */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
-/* Skills section end here */
+.handAnimated {
+  position: relative;
+  right: 75px;
+  animation: wave 2s infinite ease-in-out;
+  transform-origin: center;
+  font-size: 128px;
+}
 
-/* Projects section end here */
+/* Skill Styles */
+
+.comingSoonSection {
+  display: flex;
+  justify-content: center;
+}
+
+.comingSoon {
+  width: 440px;
+  height: 176px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Portfolio Styles */
+
+.projectContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.projectCard {
+  width: 43%;
+  height: 300px;
+  border-radius: 16px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.projectRow > h2 {
+  font-size: 32px;
+  color: var(--accent-blue);
+  font-family: "Poppins-Regular";
+  pointer-events: none;
+}
+
+.projectCard > p {
+  font-size: 24px;
+  /* font-family: "Poppins-Regular"; */
+  margin: 8px 32px 0;
+  pointer-events: none;
+}
+
+.projectRow {
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.projectLink {
+  font-size: 32px;
+  color: grey;
+  pointer-events: auto;
+}
+
+.usesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  pointer-events: none;
+}
+
+.uses {
+  /* display: none; */
+  background-color: var(--background-grey);
+  border-radius: 8px;
+  padding: 0 16px;
+  margin: 8px 16px 0 0;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.uses > p {
+  font-size: 20px;
+  pointer-events: none;
+}
+
