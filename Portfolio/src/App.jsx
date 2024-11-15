@@ -1,13 +1,51 @@
 import ProjectCard from './components/ProjectCard';
 import Memoji from './assets/images/Memoji.png';
+// import { v4 as uuidv4 } from 'uuid';
 import './App.css'
 
 const data = [{
   title: 'Phoebe\'s Flowers',
   link: 'https://github.com/MichaelaHunt/Phoebes-Flowers-Copy',
-  description: 'description here',
-  uses: ['HTML', 'CSS', 'Javascript', 'Bootstrap']
-}]
+  description: 'A front-end example of an e-commerce website for a floral arrangement and delivery company.',
+  uses: ['HTML', 'CSS', 'Javascript', 'Bootstrap'],
+  index: 1
+},
+{
+  title: 'Frosty Knows',
+  link: 'https://github.com/MichaelaHunt/FrostyKnows',
+  description: 'A website that utilizes OpenWeather\'s public API to get up-to-date weather for any location you specify.',
+  uses: ['HTML', 'CSS', 'Javascript', 'API', 'Typescript'],
+  index: 2
+},
+{
+  title: 'README Generator',
+  link: 'https://github.com/MichaelaHunt/ReadMe-Generator',
+  description: 'A handy terminal-based program that makes writing a professional-grade README fast and easy.',
+  uses: ['Node.js', 'Javascript'],
+  index: 3
+},
+{
+  title: 'Frosty Knows',
+  link: 'https://github.com/MichaelaHunt/FrostyKnows',
+  description: 'A website that utilizes OpenWeather\'s public API to get up-to-date weather for any location you specify.',
+  uses: ['HTML', 'CSS', 'Javascript', 'API', 'Typescript'],
+  index: 4
+},
+{
+  title: 'Frosty Knows',
+  link: 'https://github.com/MichaelaHunt/FrostyKnows',
+  description: 'A website that utilizes OpenWeather\'s public API to get up-to-date weather for any location you specify.',
+  uses: ['HTML', 'CSS', 'Javascript', 'API', 'Typescript'],
+  index: 5
+},
+{
+  title: 'Frosty Knows',
+  link: 'https://github.com/MichaelaHunt/FrostyKnows',
+  description: 'A website that utilizes OpenWeather\'s public API to get up-to-date weather for any location you specify.',
+  uses: ['HTML', 'CSS', 'Javascript', 'API', 'Typescript'],
+  index: 6
+}
+]
 
 function App() {
   
@@ -91,8 +129,9 @@ function App() {
         <div className='horizontalLine'></div>
       </div>
       <div className='projectContainer'>{/*Container*/}
-        {/*Loop Here!!*/}
-        <ProjectCard ProjectCardProps={data[0]}></ProjectCard>
+        {data.map((item, i) => (
+          <ProjectCard key={i} ProjectCardProps={data[i]}></ProjectCard>
+        ))}
       </div>
       {/*Portfolio End*/}
     </>

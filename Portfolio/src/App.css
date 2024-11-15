@@ -192,15 +192,17 @@ span {
 
 .projectContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 80px;
 }
 
 .projectCard {
-  width: 43%;
+  width: 624px;
   height: 300px;
   border-radius: 16px;
   padding: 32px;
+  margin: 0 16px 32px;
   box-sizing: border-box;
 }
 
