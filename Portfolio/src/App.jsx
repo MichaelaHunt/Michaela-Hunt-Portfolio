@@ -2,6 +2,7 @@ import ProjectCard from './components/ProjectCard';
 import Memoji from './assets/images/Memoji.png';
 // import { v4 as uuidv4 } from 'uuid';
 import './App.css'
+import NavHeader from './components/NavHeader';
 
 const data = [{
   title: 'Phoebe\'s Flowers',
@@ -63,15 +64,7 @@ function App() {
 
   return (
     <>
-      <div className='headerContainer card'>
-        {/*Logo link to home page here...*/}
-        <ul>
-          <li><a href='#aboutMeSection'>About Me</a></li>
-          <li><a href='#portfolioSection'>Portfolio</a></li>
-          <li><a>Contact Me</a></li>
-          <li><a>Resume</a></li>
-        </ul>
-      </div>
+      <NavHeader></NavHeader>
       {/*Introduction*/}
       <div className='main'>{/*Main*/}
         <div className='card mainCard row'>
