@@ -6,12 +6,18 @@ function NavHeader() {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.hash) {
-            const sectionId = location.hash.substring(1);
+        // Function to scroll to a section with smooth behavior
+        const scrollToSection = (hash) => {
+            const sectionId = hash.substring(1); // Remove the '#' symbol
             const section = document.getElementById(sectionId);
             if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
+                section.scrollIntoView();
             }
+        };
+
+        // Trigger scroll on hash change
+        if (location.hash) {
+            scrollToSection(location.hash);
         }
     }, [location]);
 
