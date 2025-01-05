@@ -120,7 +120,7 @@ span {
 
 .horizontalLine {
   border-top: 4px solid var(--accent-blue);
-  width: 40%;
+  width: 30%;
 }
 
 .divider {
@@ -181,8 +181,8 @@ span {
 }
 
 .comingSoon {
-  width: 27.5rem;
-  height: 11rem;
+  width: 18rem;
+  height: 6rem;
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -260,9 +260,27 @@ input:focus, textarea:focus, button:focus {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* Screen Adjustments */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 500px) {
+  .comingSoon {
+    width: 27.5rem;
+    height: 11rem;
+    border-radius: 1rem;
+  }
+}
 
-/* @media () {
+/* contact me */
+@media (min-width: 575px) {
+  
+}
 
-} */
+/* About me */
+@media (min-width: 967px) {
+  .horizontalLine {
+    width: 40%;
+  }
+}
 
-/* change main margin-top to 187px for regular... */
+/* intro */
+@media (min-width: 1338px) {
+
+}
