@@ -1,98 +1,118 @@
 /* Header Styles */
 .headerContainer {
-    width: 100%;
-    height: 5.5rem;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.headerContainer>ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerContainer>ul>li>a {
+  font-size: 0.875rem;
+  padding: 0 2rem 0 0;
+  color: white;
+}
+
+/* Footer Styles */
+.footerContainer {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.footerContainer>ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerContainer>ul>li {
+  padding: 0 5rem 0 0;
+}
+
+/* Project Card Style */
+.projectCard {
+  width: 39rem;
+  height: 18.75rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 0 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.projectRow>h2 {
+  font-size: 2rem;
+  color: var(--accent-blue);
+  font-family: "Poppins-Regular";
+  pointer-events: none;
+}
+
+.projectCard>p {
+  font-size: 1.5rem;
+  /* font-family: "Poppins-Regular"; */
+  margin: 0.5rem 2rem 0;
+  pointer-events: none;
+}
+
+.projectRow {
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.projectLink {
+  font-size: 2rem;
+  color: grey;
+  pointer-events: auto;
+}
+
+.usesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  pointer-events: none;
+}
+
+/* UsedLabel Styles */
+.uses {
+  /* display: none; */
+  background-color: var(--background-grey);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  margin: 0.5rem 1rem 0 0;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.uses>p {
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+/* larger than 673 */
+@media (min-width: 673px) {
+  .headerContainer>ul>li>a {
+    font-size: 1rem;
+    padding: 0 3rem 0 0;
+  }
+}
+
+/* larger than 900 */
+@media (min-width: 900px) {
+  .headerContainer {
     padding-left: 2rem;
   }
-  
-  .headerContainer>ul {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
-  
+
   .headerContainer>ul>li>a {
     font-size: 1.5rem;
     padding: 0 5rem 0 0;
-    color: white;
   }
-
-  /* Footer Styles */
-  .footerContainer {
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .footerContainer > ul {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .footerContainer>ul>li {
-    padding: 0 5rem 0 0;
-  }
-
-  /* Project Card Style */
-  .projectCard {
-    width: 39rem;
-    height: 18.75rem;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 0 1rem 2rem;
-    box-sizing: border-box;
-  }
-  
-  .projectRow > h2 {
-    font-size: 2rem;
-    color: var(--accent-blue);
-    font-family: "Poppins-Regular";
-    pointer-events: none;
-  }
-  
-  .projectCard > p {
-    font-size: 1.5rem;
-    /* font-family: "Poppins-Regular"; */
-    margin: 0.5rem 2rem 0;
-    pointer-events: none;
-  }
-  
-  .projectRow {
-    justify-content: space-between;
-    pointer-events: none;
-  }
-  
-  .projectLink {
-    font-size: 2rem;
-    color: grey;
-    pointer-events: auto;
-  }
-  
-  .usesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    pointer-events: none;
-  }
-
-  /* UsedLabel Styles */
-  .uses {
-    /* display: none; */
-    background-color: var(--background-grey);
-    border-radius: 0.5rem;
-    padding: 0 1rem;
-    margin: 0.5rem 1rem 0 0;
-    display: inline-block;
-    pointer-events: none;
-  }
-  
-  .uses > p {
-    font-size: 1.25rem;
-    pointer-events: none;
-  }
+}
