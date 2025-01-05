@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import './Components.css';
 
 function Header() {
     const currentPage = useLocation().pathname;

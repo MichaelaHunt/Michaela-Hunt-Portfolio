@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import UsedLabel from './UsedLabel';
+import './Components.css';
 
 
 // ProjectProps => {
@@ -50,7 +51,6 @@ function Project({ ProjectProps }) {
                 <div className='usesContainer' style={{ display: projectHover ? 'inline-block' : 'none' }}>
                     {ProjectProps.uses.map((item, i) => (
                         <UsedLabel key={i} name={item}></UsedLabel>
-                        
                     ))}
                 </div>
                 <p id={`description${ProjectProps.index}`}>{ProjectProps.description}</p>
