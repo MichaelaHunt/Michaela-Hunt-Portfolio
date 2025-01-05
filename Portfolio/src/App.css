@@ -232,7 +232,7 @@ input {
   height: 40px;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, button:focus {
   outline: none;
 }
 
@@ -249,4 +249,8 @@ input:focus, textarea:focus {
   padding: 16px 0;
   font-family: 'Poppins-Regular';
   font-size: 18px;
+}
+
+.contactMeButton:active {
+  background-color: #101010;
 }
