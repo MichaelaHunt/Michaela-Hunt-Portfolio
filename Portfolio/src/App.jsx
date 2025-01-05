@@ -5,11 +5,11 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-     <Header></Header>
-      <main className="mx-3">
-        <Outlet />
-      </main>
-      <Footer></Footer>
+      <div className='site'>
+        <Header></Header>
+          <Outlet />
+        <Footer></Footer>
+      </div>
     </>
   );
 }

@@ -24,6 +24,18 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+input {
+  margin: 0;
+  padding: 0;
+}
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .main {
   display: flex;
   flex-direction: row;
@@ -41,14 +53,18 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: row;
 }
 
-.introLinks>i {
-  color: white;
-  font-size: 58px;
-}
-
 .card {
   background-color: #414141;
   box-shadow: 0 4px 16px 0 rgba(0 0 0 .3);
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Home Page Styles */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.introLinks>i {
+  color: white;
+  font-size: 58px;
 }
 
 .mainCard {
@@ -176,7 +192,42 @@ span {
   margin-bottom: 80px;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Contact Me Page Styles */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.contactBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.contactContainer {
+  border-radius: 16px;
+  padding: 16px 32px;
+}
 
+.contactContainer>h3 {
+  font-family: 'Poppins-Regular';
+  font-weight: 400;
+  margin-top: 16px;
+}
 
+input {
+  font-size: 18px;
+  height: 40px;
+  width: 448px;
+  border-radius: 12px;
+  background-color: #1A1A1A;
+  border: solid 1px white;
+  color: white;
+  padding-left: 8px;
+  width: 400px;
+}
 
+input:focus {
+  outline: none;
+}
+
+.longInput {
+  height: 300px;
+}
