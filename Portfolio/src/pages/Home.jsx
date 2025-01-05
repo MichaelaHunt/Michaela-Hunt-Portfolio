@@ -2,6 +2,7 @@ import Project from '../components/Project';
 import Memoji from '../assets/images/Memoji.png';
 import '../App.css'
 import Header from '../components/Header'
+import { useEffect } from 'react';
 
 const data = [{
   title: 'Phoebe\'s Flowers',
@@ -59,6 +60,10 @@ function Home() {
         alert("Failed to copy email to clipboard :( \nEmail is: micapplehunt@gmail.com");
       });
   }
+
+  useEffect(() => {//For dev purposes, TODO: remove after responsive
+    console.log(`Browser width: ${window.innerWidth}px`);
+  }, []);
 
   return (
     <>
