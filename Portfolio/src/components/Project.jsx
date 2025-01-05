@@ -2,7 +2,7 @@ import { useState } from 'react'
 import UsedLabel from './UsedLabel';
 
 
-// ProjectCardProps => {
+// ProjectProps => {
 //     title,
 //         link,
 //         description,
@@ -10,17 +10,17 @@ import UsedLabel from './UsedLabel';
 //         index
 // }
 
-function ProjectCard({ ProjectCardProps }) {
+function Project({ ProjectProps }) {
     const [projectHover, setProjectHover] = useState(false);
 
     function changeProjectStyles() {
         setProjectHover(!projectHover);
         console.log(projectHover);
 
-        let title = document.getElementById(`title${ProjectCardProps.index}`);
-        let background = document.getElementById(`background${ProjectCardProps.index}`);
-        let link = document.getElementById(`link${ProjectCardProps.index}`);
-        let description = document.getElementById(`description${ProjectCardProps.index}`);
+        let title = document.getElementById(`title${ProjectProps.index}`);
+        let background = document.getElementById(`background${ProjectProps.index}`);
+        let link = document.getElementById(`link${ProjectProps.index}`);
+        let description = document.getElementById(`description${ProjectProps.index}`);
 
         if (!projectHover) {//the state change is scheduled for the end of the function execution
             title.style.color = 'White';
@@ -40,27 +40,23 @@ function ProjectCard({ ProjectCardProps }) {
 
     return (
         <>
-            <div className='card projectCard' id={`background${ProjectCardProps.index}`} onMouseOver={changeProjectStyles} onMouseLeave={changeProjectStyles}>{/*Project Card*/}
+            <div className='card projectCard' id={`background${ProjectProps.index}`} onMouseOver={changeProjectStyles} onMouseLeave={changeProjectStyles}>{/*Project Card*/}
                 <div className='row projectRow'>
-                    <h2 id={`title${ProjectCardProps.index}`}>{ProjectCardProps.title}</h2>
-                    <a href={ProjectCardProps.link}>
-                        <i id={`link${ProjectCardProps.index}`} className="fa-solid fa-link projectLink"></i>
+                    <h2 id={`title${ProjectProps.index}`}>{ProjectProps.title}</h2>
+                    <a href={ProjectProps.link}>
+                        <i id={`link${ProjectProps.index}`} className="fa-solid fa-link projectLink"></i>
                     </a>
                 </div>
-                {/*Loop here thru uses*/}
                 <div className='usesContainer' style={{ display: projectHover ? 'inline-block' : 'none' }}>
-                    {ProjectCardProps.uses.map((item, i) => (
+                    {ProjectProps.uses.map((item, i) => (
                         <UsedLabel key={i} name={item}></UsedLabel>
                         
                     ))}
-                    {/* <UsedLabel name='CSS'></UsedLabel>
-                    <UsedLabel name='HTML'></UsedLabel>
-                    <UsedLabel name='Javascript'></UsedLabel> */}
                 </div>
-                <p id={`description${ProjectCardProps.index}`}>{ProjectCardProps.description}</p>
+                <p id={`description${ProjectProps.index}`}>{ProjectProps.description}</p>
             </div>
         </>
     )
 }
 
-export default ProjectCard
+export default Project

@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
-function NavHeader() {
+function Header() {
     const currentPage = useLocation().pathname;
     const location = useLocation();
 
@@ -36,4 +36,4 @@ function NavHeader() {
     )
 }
 
-export default NavHeader;
+export default Header;

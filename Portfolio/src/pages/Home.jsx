@@ -1,7 +1,7 @@
-import ProjectCard from '../components/ProjectCard';
+import Project from '../components/Project';
 import Memoji from '../assets/images/Memoji.png';
 import '../App.css'
-import NavHeader from '../components/NavHeader'
+import Header from '../components/Header'
 
 const data = [{
   title: 'Phoebe\'s Flowers',
@@ -120,7 +120,7 @@ function Home() {
       </div>
       <div className='projectContainer'>{/*Container*/}
         {data.map((item, i) => (
-          <ProjectCard key={i} ProjectCardProps={data[i]}></ProjectCard>
+          <Project key={i} ProjectProps={data[i]}></Project>
         ))}
       </div>
       {/*Portfolio End*/}

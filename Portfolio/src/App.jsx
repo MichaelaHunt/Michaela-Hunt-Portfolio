@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
-import NavHeader from './components/NavHeader';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-     <NavHeader></NavHeader>
+     <Header></Header>
       <main className="mx-3">
         <Outlet />
       </main>
