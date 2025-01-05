@@ -1,7 +1,6 @@
 import Project from '../components/Project';
 import Memoji from '../assets/images/Memoji.png';
 import '../App.css'
-import Header from '../components/Header'
 import { useEffect } from 'react';
 
 const data = [{
@@ -63,6 +62,7 @@ function Home() {
 
   useEffect(() => {//For dev purposes, TODO: remove after responsive
     console.log(`Browser width: ${window.innerWidth}px`);
+    console.log(`Browser width: ${window.innerWidth / 16}rem`);
   }, []);
 
   return (
