@@ -35,6 +35,8 @@ input {
 
 .site {
   min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

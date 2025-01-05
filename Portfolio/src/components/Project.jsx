@@ -16,7 +16,7 @@ function Project({ ProjectProps }) {
 
     function changeProjectStyles() {
         setProjectHover(!projectHover);
-        console.log(projectHover);
+        // console.log(projectHover);
 
         let title = document.getElementById(`title${ProjectProps.index}`);
         let background = document.getElementById(`background${ProjectProps.index}`);

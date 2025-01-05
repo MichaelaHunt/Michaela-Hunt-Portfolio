@@ -18,7 +18,7 @@ const data = [{
   index: 2
 },
 {
-  title: 'README Generator',
+  title: 'README Gen.',
   link: 'https://github.com/MichaelaHunt/ReadMe-Generator',
   description: 'A handy terminal-based program that makes writing a professional-grade README fast and easy.',
   uses: ['Node.js', 'Javascript'],
