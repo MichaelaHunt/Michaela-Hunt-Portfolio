@@ -405,7 +405,7 @@ input:focus, textarea:focus, button:focus {
   }
   
   .handAnimated {
-    right: 2.5rem;
+    right: 2rem;
     font-size: 4rem;
   }
 
@@ -414,7 +414,7 @@ input:focus, textarea:focus, button:focus {
       transform: rotate(0deg);
     }
     50% {
-      transform: rotate(-20deg);
+      transform: rotate(-10deg);
     }
     100% {
       transform: rotate(0deg);
@@ -499,7 +499,7 @@ input:focus, textarea:focus, button:focus {
 
   .aboutMeCard {
     width: 43.438rem;
-    height: 22.188rem;
+    height: 22.19rem;
     padding: 5.625rem 4rem;
     border-radius: 1rem;
     margin-left: -8rem;
@@ -585,12 +585,40 @@ input:focus, textarea:focus, button:focus {
 }
 
 @media (min-width: 1070px) and (max-width: 1337px) {
+  .aboutMeCard {
+    margin-left: -7.25rem;
+    box-sizing: border-box;
+    width: 43.4rem;
+    height: 22.19rem;
+    padding: 5.625rem 4rem;
+    border-radius: 16px;
+    font-family: "Poppins-Regular";
+  }
+
+  .aboutMeCard>p {
+    font-size: 24px;
+  }
+  
+  .aboutMe {
+    justify-content: center;
+  }
+
+  .handAnimated {
+    position: relative;
+    /* bottom: 4.375rem; */
+    right: 4.7rem;
+    animation: wave 2s infinite ease-in-out;
+    /* transform-origin: bottom right; */
+    transform-origin: center;
+    font-size: 8rem;
+  }
+
   .comingSoon {
     width: 27.5rem;
     height: 11rem;
     border-radius: 1rem;
   }
-  
+
   .introLinks>i {
     color: white;
     font-size: 3.625rem;
