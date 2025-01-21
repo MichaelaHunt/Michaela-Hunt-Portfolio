@@ -744,4 +744,19 @@ input:focus, textarea:focus, button:focus {
     width: 28.125rem;
     height: 31.25rem;
   }
+
+  .comingSoonSection {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .comingSoon {
+    width: 27.5rem;
+    height: 11rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
 }
