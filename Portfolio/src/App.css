@@ -487,6 +487,39 @@ input:focus, textarea:focus, button:focus {
 
 /* About me */
 @media (min-width: 967px) and (max-width: 1069px) {
+  .contactContainer {
+    border-radius: 1rem;
+    padding: 2rem 4rem 3rem;
+  }
+
+  .contactContainer>h1 {
+    font-size: 3.125rem;
+  }
+  
+  .contactContainer>h3 {
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  
+  input, textarea {
+    font-size: 1.125rem;
+    width: 28rem;
+    border-radius: 0.75rem;
+    padding-left: 0.5rem;
+    width: 25rem;
+  }
+
+  .longInput {
+    height: 15.625rem;
+    padding: 0.75rem;
+  }
+  
+  .contactMeButton {
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+    font-size: 1.125rem;
+  }
+
   .comingSoon {
     width: 27.5rem;
     height: 11rem;
@@ -586,6 +619,39 @@ input:focus, textarea:focus, button:focus {
 }
 
 @media (min-width: 1070px) and (max-width: 1337px) {
+  .contactContainer {
+    border-radius: 1rem;
+    padding: 2rem 4rem 3rem;
+  }
+
+  .contactContainer>h1 {
+    font-size: 3.125rem;
+  }
+  
+  .contactContainer>h3 {
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  
+  input, textarea {
+    font-size: 1.125rem;
+    width: 28rem;
+    border-radius: 0.75rem;
+    padding-left: 0.5rem;
+    width: 25rem;
+  }
+
+  .longInput {
+    height: 15.625rem;
+    padding: 0.75rem;
+  }
+  
+  .contactMeButton {
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+    font-size: 1.125rem;
+  }
+
   .aboutMeCard {
     margin-left: -7.25rem;
     box-sizing: border-box;
@@ -688,6 +754,39 @@ input:focus, textarea:focus, button:focus {
 
 /* intro */
 @media (min-width: 1338px) {
+  .contactContainer {
+    border-radius: 1rem;
+    padding: 2rem 4rem 3rem;
+  }
+
+  .contactContainer>h1 {
+    font-size: 3.125rem;
+  }
+  
+  .contactContainer>h3 {
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  
+  input, textarea {
+    font-size: 1.125rem;
+    width: 28rem;
+    border-radius: 0.75rem;
+    padding-left: 0.5rem;
+    width: 25rem;
+  }
+
+  .longInput {
+    height: 15.625rem;
+    padding: 0.75rem;
+  }
+  
+  .contactMeButton {
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+    font-size: 1.125rem;
+  }
+  
   @keyframes wave {
     0% {
       transform: rotate(0deg);
