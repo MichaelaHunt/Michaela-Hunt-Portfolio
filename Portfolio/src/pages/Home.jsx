@@ -113,7 +113,7 @@ function Home() {
       </div>
       <div className='comingSoonSection'>
         <div className='card comingSoon'>
-          <h2>Coming soon!</h2>
+          <h3>Coming soon!</h3>
         </div>
       </div>
       {/*Skills End*/}

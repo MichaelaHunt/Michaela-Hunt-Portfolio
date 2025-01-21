@@ -353,6 +353,12 @@ input:focus, textarea:focus, button:focus {
 }
 
 @media (min-width: 575px) and (max-width: 966px) {
+  .comingSoon {
+    width: 27.5rem;
+    height: 11rem;
+    border-radius: 1rem;
+  }
+
   .contactContainer {
     border-radius: 1rem;
     padding: 2rem 4rem 3rem;
@@ -481,6 +487,12 @@ input:focus, textarea:focus, button:focus {
 
 /* About me */
 @media (min-width: 967px) and (max-width: 1069px) {
+  .comingSoon {
+    width: 27.5rem;
+    height: 11rem;
+    border-radius: 1rem;
+  }
+
   .horizontalLine {
     width: 40%;
   }
@@ -573,6 +585,12 @@ input:focus, textarea:focus, button:focus {
 }
 
 @media (min-width: 1070px) and (max-width: 1337px) {
+  .comingSoon {
+    width: 27.5rem;
+    height: 11rem;
+    border-radius: 1rem;
+  }
+  
   .introLinks>i {
     color: white;
     font-size: 3.625rem;
@@ -705,6 +723,7 @@ input:focus, textarea:focus, button:focus {
     display: flex;
     flex-direction: row;
     margin-top: 9rem;
+    margin-bottom: 5rem;
     justify-content: center;
   }
   
@@ -758,5 +777,5 @@ input:focus, textarea:focus, button:focus {
     align-items: center;
     justify-content: center;
   }
-  
+
 }
