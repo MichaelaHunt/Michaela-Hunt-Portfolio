@@ -654,17 +654,31 @@ input:focus, textarea:focus, button:focus {
   
   .handAnimated {
     position: relative;
-    bottom: 4.375rem;
+    /* bottom: 4.375rem; */
     right: 4.7rem;
     animation: wave 2s infinite ease-in-out;
-    transform-origin: bottom right;
-    font-size: 7.25rem;
+    /* transform-origin: bottom right; */
+    transform-origin: center;
+    font-size: 8rem;
   }
 
   .aboutMeCard {
     margin-left: -7.25rem;
+    box-sizing: border-box;
+    width: 43.4rem;
+    height: 22.19rem;
+    padding: 5.625rem 4rem;
+    border-radius: 16px;
+    font-family: "Poppins-Regular";
+  }
+
+  .aboutMeCard>p {
+    font-size: 24px;
   }
   
+  .aboutMe {
+    justify-content: center;
+  }
 
   .introLinks>i {
     color: white;
@@ -674,7 +688,7 @@ input:focus, textarea:focus, button:focus {
   
   .introLinks {
     margin: 0;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.69rem;
   }
 
   .introLinks:nth-child(1){
@@ -684,6 +698,7 @@ input:focus, textarea:focus, button:focus {
   .mainCard>.column {
     flex-direction: column;
     justify-content: start;
+    align-items: start;
   }
 
   .main {
@@ -694,25 +709,25 @@ input:focus, textarea:focus, button:focus {
   }
   
   .mainCard {
-    width: 36rem;
-    height: 19rem;
+    width: 45rem;
+    height: 25rem;
     flex-direction: row;
-    padding: 3rem 2rem;
+    padding: 5.625rem 3.75rem;
     margin-top: 2.5rem;
     margin-right: 6.25rem;
   }
   
   .mainCardText>h1 {
-    font-size: 3rem;
+    font-size: 3.75rem;
   }
   
   .mainCardText>h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 1.5rem 0;
   }
   
   .mainCardText>p {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   
   .verticalLine {
@@ -726,7 +741,7 @@ input:focus, textarea:focus, button:focus {
   }
   
   .memoji {
-    width: 22.5rem;
-    height: 23.75rem;
+    width: 28.125rem;
+    height: 31.25rem;
   }
 }
