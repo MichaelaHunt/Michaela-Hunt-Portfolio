@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import './Components.css';
+import Logo from '../assets/images/M.png';
 
 function Header() {
     const currentPage = useLocation().pathname;
@@ -26,6 +27,7 @@ function Header() {
         <>
             <div className='headerContainer card'>
                 {/*Logo link to home page here...*/}
+                <Link to='/'><img src={Logo}></img></Link>
                 <ul>
                     <li><a href={currentPage === '/' ? '#aboutMeSection' : '/#aboutMeSection'}>About Me</a></li>
                     <li><a href={currentPage === '/' ? '#portfolioSection' : '/#portfolioSection'}>Portfolio</a></li>

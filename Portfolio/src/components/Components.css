@@ -1,97 +1,193 @@
+/* This all applies from at least 320-473px */
 /* Header Styles */
 .headerContainer {
-    width: 100%;
-    height: 88px;
-    display:flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .headerContainer>ul {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .headerContainer>ul>li>a {
-    font-size: 24px;
-    padding: 0 80px 0 0;
-    color: white;
-  }
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
 
-  /* Footer Styles */
-  .footerContainer {
-    height: 56px;
-    display: flex;
-    align-items: center;
-  }
+.headerContainer>ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
 
-  .footerContainer > ul {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
+.headerContainer>ul>li>a {
+  font-size: 0.875rem;
+  padding: 0 2rem 0 0;
+  color: white;
+}
 
-  .footerContainer>ul>li {
-    padding: 0 80px 0 0;
-  }
+/* Footer Styles */
+.footerContainer {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
 
-  /* Project Card Style */
+.footerContainer>ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerContainer>ul>li {
+  padding: 0 5rem 0 0;
+}
+
+/* Project Card Style */
+.projectCard {
+  width: 39rem;
+  height: 14rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 0 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.projectRow>h2 {
+  font-size: 1.5rem;
+  color: var(--accent-blue);
+  font-family: "Poppins-Regular";
+  pointer-events: none;
+}
+
+.projectCard>p {
+  font-size: 1.125rem;
+  margin: 0.5rem 1rem 0;
+  pointer-events: none;
+}
+
+.projectRow {
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.projectLink {
+  font-size: 1.5rem;
+  color: grey;
+  margin-top: 0.25rem;
+  pointer-events: auto;
+}
+
+.usesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  pointer-events: none;
+}
+
+/* UsedLabel Styles */
+.uses {
+  background-color: var(--background-grey);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  margin: 0.5rem 1rem 0 0;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.uses>p {
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+@media (min-width: 473px) {
   .projectCard {
-    width: 624px;
-    height: 300px;
-    border-radius: 16px;
-    padding: 32px;
-    margin: 0 16px 32px;
-    box-sizing: border-box;
+    width: 39rem;
+    height: 13rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0 1rem 2rem;
   }
   
-  .projectRow > h2 {
-    font-size: 32px;
-    color: var(--accent-blue);
-    font-family: "Poppins-Regular";
-    pointer-events: none;
+  .projectRow>h2 {
+    font-size: 1.75rem;
   }
   
-  .projectCard > p {
-    font-size: 24px;
-    /* font-family: "Poppins-Regular"; */
-    margin: 8px 32px 0;
-    pointer-events: none;
-  }
-  
-  .projectRow {
-    justify-content: space-between;
-    pointer-events: none;
+  .projectCard>p {
+    font-size: 1.25rem;
+    margin: 0.5rem 1rem 0;
   }
   
   .projectLink {
-    font-size: 32px;
-    color: grey;
-    pointer-events: auto;
+    font-size: 2rem;
+  }
+
+  .uses {
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    margin: 0.5rem 1rem 0 0;
+  }
+}
+
+/* larger than 673 */
+@media (min-width: 697px) {
+  .headerContainer>ul>li>a {
+    font-size: 1rem;
+    padding: 0 3rem 0 0;
+  }
+
+  .projectCard {
+    width: 42%;
+    height: 18rem;
   }
   
-  .usesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    pointer-events: none;
+  .projectRow>h2 {
+    font-size: 1.75rem;
+  }
+  
+  .projectCard>p {
+    font-size: 1.25rem;
+    margin: 0.5rem 1rem 0;
+  }
+}
+
+/* larger than 900 */
+@media (min-width: 900px) {
+  .headerContainer {
+    padding-left: 2rem;
+  }
+
+  .headerContainer>ul>li>a {
+    font-size: 1.5rem;
+    padding: 0 5rem 0 0;
+  }
+
+  .projectCard {
+    width: 39rem;
+    height: 18.75rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0 1rem 2rem;
+  }
+  
+  .projectRow>h2 {
+    font-size: 2rem;
+  }
+  
+  .projectCard>p {
+    font-size: 1.5rem;
+    margin: 0.5rem 2rem 0;
+  }
+  
+  .projectLink {
+    font-size: 2rem;
   }
 
   /* UsedLabel Styles */
   .uses {
-    /* display: none; */
-    background-color: var(--background-grey);
-    border-radius: 8px;
-    padding: 0 16px;
-    margin: 8px 16px 0 0;
-    display: inline-block;
-    pointer-events: none;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    margin: 0.5rem 1rem 0 0;
   }
   
-  .uses > p {
-    font-size: 20px;
-    pointer-events: none;
+  .uses>p {
+    font-size: 1.25rem;
   }
+}

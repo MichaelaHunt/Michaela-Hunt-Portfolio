@@ -1,7 +1,6 @@
 import Project from '../components/Project';
 import Memoji from '../assets/images/Memoji.png';
 import '../App.css'
-import Header from '../components/Header'
 import { useEffect } from 'react';
 
 const data = [{
@@ -19,7 +18,7 @@ const data = [{
   index: 2
 },
 {
-  title: 'README Generator',
+  title: 'README Gen.',
   link: 'https://github.com/MichaelaHunt/ReadMe-Generator',
   description: 'A handy terminal-based program that makes writing a professional-grade README fast and easy.',
   uses: ['Node.js', 'Javascript'],
@@ -63,6 +62,7 @@ function Home() {
 
   useEffect(() => {//For dev purposes, TODO: remove after responsive
     console.log(`Browser width: ${window.innerWidth}px`);
+    console.log(`Browser width: ${window.innerWidth / 16}rem`);
   }, []);
 
   return (
@@ -72,10 +72,10 @@ function Home() {
         <div className='card mainCard row'>
           <div className='column'>
             <a className='introLinks' href='https://github.com/MichaelaHunt'>
-              <i className="fa-brands fa-square-github" style={{ marginBottom: '27px' }}></i>
+              <i className="fa-brands fa-square-github"></i>
             </a>
             <a className='introLinks' href='https://www.linkedin.com/in/michaela-hunt'>
-              <i className="fa-brands fa-linkedin" style={{ marginBottom: '27px' }}></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
             <a className='introLinks' onClick={copyEmailToClipboard}>
               <i className="fa-solid fa-square-envelope"></i>
@@ -113,7 +113,7 @@ function Home() {
       </div>
       <div className='comingSoonSection'>
         <div className='card comingSoon'>
-          <h2>Coming soon!</h2>
+          <h3>Coming soon!</h3>
         </div>
       </div>
       {/*Skills End*/}

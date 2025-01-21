@@ -16,7 +16,7 @@ function Project({ ProjectProps }) {
 
     function changeProjectStyles() {
         setProjectHover(!projectHover);
-        console.log(projectHover);
+        // console.log(projectHover);
 
         let title = document.getElementById(`title${ProjectProps.index}`);
         let background = document.getElementById(`background${ProjectProps.index}`);
@@ -45,7 +45,7 @@ function Project({ ProjectProps }) {
                 <div className='row projectRow'>
                     <h2 id={`title${ProjectProps.index}`}>{ProjectProps.title}</h2>
                     <a href={ProjectProps.link}>
-                        <i id={`link${ProjectProps.index}`} className="fa-solid fa-link projectLink"></i>
+                        <i id={`link${ProjectProps.index}`} className="fa-brands fa-github projectLink"></i>
                     </a>
                 </div>
                 <div className='usesContainer' style={{ display: projectHover ? 'inline-block' : 'none' }}>
