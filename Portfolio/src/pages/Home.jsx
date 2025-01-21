@@ -72,10 +72,10 @@ function Home() {
         <div className='card mainCard row'>
           <div className='column'>
             <a className='introLinks' href='https://github.com/MichaelaHunt'>
-              <i className="fa-brands fa-square-github" style={{ marginBottom: '27px' }}></i>
+              <i className="fa-brands fa-square-github"></i>
             </a>
             <a className='introLinks' href='https://www.linkedin.com/in/michaela-hunt'>
-              <i className="fa-brands fa-linkedin" style={{ marginBottom: '27px' }}></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
             <a className='introLinks' onClick={copyEmailToClipboard}>
               <i className="fa-solid fa-square-envelope"></i>

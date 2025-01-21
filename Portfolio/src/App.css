@@ -44,9 +44,11 @@ input {
 
 .main {
   display: flex;
-  flex-direction: row;
-  margin-top: 11rem;
-  justify-content: center;
+  flex-direction: column-reverse;
+  margin-top: 4rem;
+  /* ln 48 needs a rework somehow */
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .column {
@@ -70,46 +72,66 @@ input {
 
 .introLinks>i {
   color: white;
-  font-size: 3.625rem;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.introLinks {
+  margin: 0;
+  margin: 0 0 0 2rem;
+}
+
+.introLinks:nth-child(1) {
+  margin: 0;
 }
 
 .mainCard {
-  width: 45rem;
-  height: 25rem;
+  flex-direction: column;
+  width: 22rem;
+  height: 22rem;
+  margin-top: 2rem;
+  margin-right: 0;
+  align-items: start;
+  justify-content: center;
   border-radius: 1rem;
-  padding: 5.625rem 3.75rem;
+  padding: 3.75rem 1.5rem;
   box-sizing: border-box;
-  margin-top: 2.5rem;
-  margin-right: 6.25rem;
+}
+
+.mainCard>.column {
+  flex-direction: row;
+  justify-content: start;
 }
 
 .mainCardText>h1 {
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   font-family: "Poppins-SemiBold";
   text-shadow: -4px 4px var(--accent-blue);
 }
 
 .mainCardText>h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--accent-blue);
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .mainCardText>p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-family: "Poppins-Regular";
 }
 
 .verticalLine {
-  border-left: 4px solid var(--accent-blue);
-  height: 8.75rem;
   border-radius: 1rem;
-  margin: 0.375rem 2.5rem 0;
+  border: none;
+  height: 0;
+  border-bottom: 4px solid var(--accent-blue);
+  width: 13rem;
+  margin: 1rem 0;
 }
 
 .memoji {
-  width: 28.125rem;
-  height: 31.25rem;
+  width: 22.5rem;
+  height: 23.75rem;
 }
 
 span {
@@ -138,6 +160,7 @@ span {
 .aboutMeCard {
   box-sizing: border-box;
   width: 80%;
+  max-width: 700px;
   padding: 2rem 2rem;
   border-radius: 1rem;
   font-family: "Poppins-Regular";
@@ -263,15 +286,73 @@ input:focus, textarea:focus, button:focus {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* Screen Adjustments */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media (min-width: 500px) {
+@media (min-width: 500px) and (max-width: 574px) {
   .comingSoon {
     width: 27.5rem;
     height: 11rem;
     border-radius: 1rem;
   }
+
+  /* Intro Section */
+
+  .introLinks>i {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .introLinks {
+    margin: 0;
+    margin: 0 0 0 2rem;
+  }
+
+  .introLinks:nth-child(1) {
+    margin: 0;
+  }
+
+  .mainCard {
+    flex-direction: column;
+    width: 26rem;
+    height: 24rem;
+    margin-top: 2rem;
+    margin-right: 0;
+    align-items: start;
+    padding: 5.625rem 3.75rem;
+    justify-content: center;
+  }
+
+  .mainCard>.column {
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .verticalLine {/*This is turned into horizontal line*/
+    border: none;
+    height: 0;
+    border-bottom: 4px solid var(--accent-blue);
+    width: 13rem;
+    margin: 1rem 0;
+  }
+  
+  .mainCardText>h1 {
+    font-size: 2.5rem;
+  }
+  
+  .mainCardText>h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .mainCardText>p {
+    font-size: 1rem;
+  }
+  
+  .memoji {
+    width: 22.5rem;
+    height: 23.75rem;
+  }
 }
 
-@media (min-width: 575px) {
+@media (min-width: 575px) and (max-width: 966px) {
   .contactContainer {
     border-radius: 1rem;
     padding: 2rem 4rem 3rem;
@@ -333,10 +414,73 @@ input:focus, textarea:focus, button:focus {
       transform: rotate(0deg);
     }
   }
+
+  /* Intro Section */
+  .main {
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+    align-items: center;
+  }
+
+  .introLinks>i {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .introLinks {
+    margin: 0 0 0 2rem;
+  }
+
+  .introLinks:nth-child(1) {
+    margin: 0;
+  }
+
+  .mainCard {
+    flex-direction: column;
+    width: 26rem;
+    height: 24rem;
+    margin-top: 2rem;
+    margin-right: 0;
+    padding: 5.625rem 3.75rem;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .mainCard>.column {
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: start;
+  }
+
+  .verticalLine {/*This is turned into horizontal line*/
+    border: none;
+    height: 0;
+    border-bottom: 4px solid var(--accent-blue);
+    width: 13rem;
+    margin: 1rem 0;
+  }
+  
+  .mainCardText>h1 {
+    font-size: 2.5rem;
+  }
+  
+  .mainCardText>h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .mainCardText>p {
+    font-size: 1rem;
+  }
+  
+  .memoji {
+    width: 22.5rem;
+    height: 23.75rem;
+  }
 }
 
 /* About me */
-@media (min-width: 967px) {
+@media (min-width: 967px) and (max-width: 1069px) {
   .horizontalLine {
     width: 40%;
   }
@@ -360,9 +504,229 @@ input:focus, textarea:focus, button:focus {
     transform-origin: center;
     font-size: 8rem;
   }
+
+  /* Intro Section */
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 11rem;
+    justify-content: center;
+  }
+
+  .introLinks>i {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .introLinks {
+    margin: 0;
+    margin: 0 0 0 2rem;
+  }
+
+  .introLinks:nth-child(1) {
+    margin: 0;
+  }
+
+  .mainCard {
+    flex-direction: column;
+    width: 26rem;
+    height: 24rem;
+    margin-top: 0;
+    margin-right: 6.25rem;
+    padding: 5.625rem 3.75rem;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .mainCard>.column {
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: start;
+  }
+
+  .verticalLine {/*This is turned into horizontal line*/
+    border: none;
+    height: 0;
+    border-bottom: 4px solid var(--accent-blue);
+    width: 13rem;
+    margin: 1rem 0;
+  }
+  
+  .mainCardText>h1 {
+    font-size: 2.5rem;
+  }
+  
+  .mainCardText>h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .mainCardText>p {
+    font-size: 1rem;
+  }
+  
+  .memoji {
+    width: 22.5rem;
+    height: 23.75rem;
+  }
+}
+
+@media (min-width: 1070px) and (max-width: 1337px) {
+  .introLinks>i {
+    color: white;
+    font-size: 3.625rem;
+    margin: 0;
+  }
+  
+  .introLinks {
+    margin: 0;
+    margin-bottom: 1.6rem;
+  }
+
+  .introLinks:nth-child(1){
+    margin-bottom: 1.6rem;
+  }
+
+  .mainCard>.column {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 11rem;
+    justify-content: center;
+  }
+  
+  .mainCard {
+    width: 36rem;
+    height: 19rem;
+    flex-direction: row;
+    padding: 3rem 2rem;
+    margin-top: 2.5rem;
+    margin-right: 6.25rem;
+  }
+  
+  .mainCardText>h1 {
+    font-size: 3rem;
+  }
+  
+  .mainCardText>h3 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+  }
+  
+  .mainCardText>p {
+    font-size: 1rem;
+  }
+  
+  .verticalLine {
+    border: none;
+    border-left: 4px solid var(--accent-blue);
+    height: 8.75rem;
+    margin: 0.5rem 2.5rem;
+    width: 0;
+    border-radius: 1rem;
+    /* margin: 0.375rem 2.5rem 0; */
+  }
+  
+  .memoji {
+    width: 22.5rem;
+    height: 23.75rem;
+  }
 }
 
 /* intro */
 @media (min-width: 1338px) {
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .handAnimated {
+    position: relative;
+    bottom: 4.375rem;
+    right: 4.7rem;
+    animation: wave 2s infinite ease-in-out;
+    transform-origin: bottom right;
+    font-size: 7.25rem;
+  }
 
+  .aboutMeCard {
+    margin-left: -7.25rem;
+  }
+  
+
+  .introLinks>i {
+    color: white;
+    font-size: 3.625rem;
+    margin: 0;
+  }
+  
+  .introLinks {
+    margin: 0;
+    margin-bottom: 1.6rem;
+  }
+
+  .introLinks:nth-child(1){
+    margin-bottom: 1.6rem;
+  }
+
+  .mainCard>.column {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9rem;
+    justify-content: center;
+  }
+  
+  .mainCard {
+    width: 36rem;
+    height: 19rem;
+    flex-direction: row;
+    padding: 3rem 2rem;
+    margin-top: 2.5rem;
+    margin-right: 6.25rem;
+  }
+  
+  .mainCardText>h1 {
+    font-size: 3rem;
+  }
+  
+  .mainCardText>h3 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+  }
+  
+  .mainCardText>p {
+    font-size: 1rem;
+  }
+  
+  .verticalLine {
+    border: none;
+    border-left: 4px solid var(--accent-blue);
+    height: 8.75rem;
+    margin: 0.5rem 2.5rem;
+    width: 0;
+    border-radius: 1rem;
+    /* margin: 0.375rem 2.5rem 0; */
+  }
+  
+  .memoji {
+    width: 22.5rem;
+    height: 23.75rem;
+  }
 }
