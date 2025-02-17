@@ -120,7 +120,7 @@ function Home() {
       {/*Portfolio*/}
       <div className='row divider' id='portfolioSection'>{/*Divider*/}
         <div className='horizontalLine'></div>
-        <h3>Portfolio</h3>
+        <h3>Coding Portfolio</h3>
         <div className='horizontalLine'></div>
       </div>
       <div className='projectContainer'>{/*Container*/}
