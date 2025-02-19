@@ -2,6 +2,7 @@ import Project from '../components/Project';
 import Memoji from '../assets/images/Memoji.png';
 import '../App.css'
 import { useEffect } from 'react';
+import SkillsSection from '../components/SkillsSection';
 
 const data = [{
   title: 'Phoebe\'s Flowers',
@@ -101,7 +102,7 @@ function Home() {
       <div className='row aboutMe'>
         <h1 className='handAnimated'>👋</h1>
         <div className='card aboutMeCard'>
-          <p>Hi! I’m a software engineer with a passion for <span>web development</span> and <span>UX/UI Design</span>. I hold <span>two bachelor's degrees</span>: one in <span>Computer Science</span> and another in <span>Graphic Design</span>! The majority of my experience is in <span>React and .NET</span>.</p>
+          <p>Hi! I’m a software engineer with a passion for <span>web development</span> and <span>UX/UI Design</span>. I hold <span>two bachelor's degrees</span>: one in <span>Computer Science</span> and another in <span>Graphic Design</span>! The majority of my experience is in <span>React, JavaScript, and .NET</span>.</p>
         </div>
       </div>
       {/*About Me End*/}
@@ -112,9 +113,7 @@ function Home() {
         <div className='horizontalLine'></div>
       </div>
       <div className='comingSoonSection'>
-        <div className='card comingSoon'>
-          <h3>Coming soon!</h3>
-        </div>
+        <SkillsSection></SkillsSection>
       </div>
       {/*Skills End*/}
       {/*Portfolio*/}
