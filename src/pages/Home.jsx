@@ -6,9 +6,9 @@ import SkillsSection from '../components/SkillsSection';
 
 const data = [{
   title: 'Phoebe\'s Flowers',
-  link: 'https://github.com/MichaelaHunt/Phoebes-Flowers-Copy',
-  description: 'A front-end example of an e-commerce website for a floral arrangement and delivery company.',
-  uses: ['HTML', 'CSS', 'Javascript', 'Bootstrap'],
+  link: 'https://github.com/MichaelaHunt/Phoebes-Flowers-MERN',
+  description: 'A faux e-commerce website for a floral arrangement and delivery company built using the MERN stack.',
+  uses: ['HTML', 'CSS', 'Typescript', 'React', 'MongoDB', 'Mongoose ORM', 'JWT', 'GraphQL', 'Vite'],
   index: 1
 },
 {
@@ -26,26 +26,13 @@ const data = [{
   index: 3
 },
 {
-  title: 'Frosty Knows',
-  link: 'https://github.com/MichaelaHunt/FrostyKnows',
-  description: 'A website that utilizes OpenWeather\'s public API to get up-to-date weather for any location you specify.',
-  uses: ['HTML', 'CSS', 'Javascript', 'API', 'Typescript'],
+  title: 'Chartz',
+  link: 'https://github.com/MichaelaHunt/Chartz',
+  description: 'A website that combine\'s ITunes and Genius public API to give the user lyrics to the current top charting songs.',
+  uses: ['HTML', 'CSS', 'Javascript', 'React', 'API', 'Typescript', "PostgreSQL", "Sequelize", "JWT", "Authentication", 'Vite'],
   index: 4
 },
-{
-  title: 'Frosty Knows',
-  link: 'https://github.com/MichaelaHunt/FrostyKnows',
-  description: 'A website that utilizes OpenWeather\'s public API to get up-to-date weather for any location you specify.',
-  uses: ['HTML', 'CSS', 'Javascript', 'API', 'Typescript'],
-  index: 5
-},
-{
-  title: 'Frosty Knows',
-  link: 'https://github.com/MichaelaHunt/FrostyKnows',
-  description: 'A website that utilizes OpenWeather\'s public API to get up-to-date weather for any location you specify.',
-  uses: ['HTML', 'CSS', 'Javascript', 'API', 'Typescript'],
-  index: 6
-}
+
 ]
 
 function Home() {
