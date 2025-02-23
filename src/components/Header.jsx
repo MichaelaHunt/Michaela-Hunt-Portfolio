@@ -31,7 +31,7 @@ function Header() {
                 <ul>
                     <li><a href={currentPage === '/' ? '#aboutMeSection' : '/#aboutMeSection'}>About Me</a></li>
                     <li><a href={currentPage === '/' ? '#portfolioSection' : '/#portfolioSection'}>Portfolio</a></li>
-                    <li><Link to="/ContactMe">Contact Me</Link></li>
+                    {/* <li><Link to="/ContactMe">Contact Me</Link></li> */}
                     <li><Link to="/Resume">Resume</Link></li>
                 </ul>
             </div>
