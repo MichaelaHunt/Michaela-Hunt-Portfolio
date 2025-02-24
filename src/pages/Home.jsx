@@ -3,11 +3,12 @@ import Memoji from '../assets/images/Memoji.png';
 import '../App.css'
 import { useEffect } from 'react';
 import SkillsSection from '../components/SkillsSection';
+import SectionDivider from '../components/SectionDivider';
 
 const data = [{
   title: 'Phoebe\'s Flowers',
   link: 'https://github.com/MichaelaHunt/Phoebes-Flowers-MERN',
-  description: 'A faux e-commerce website for a floral arrangement and delivery company built using the MERN stack.',
+  description: 'A e-commerce website for an imaginary floral arrangement and delivery company built using the MERN stack.',
   uses: ['HTML', 'CSS', 'Typescript', 'React', 'MongoDB', 'Mongoose ORM', 'JWT', 'GraphQL', 'Vite'],
   index: 1
 },
@@ -32,11 +33,48 @@ const data = [{
   uses: ['HTML', 'CSS', 'Javascript', 'React', 'API', 'Typescript', "PostgreSQL", "Sequelize", "JWT", "Authentication", 'Vite'],
   index: 4
 },
+];
 
+const designData = [
+  {
+    title: 'Phoebe\'s Flowers',
+    imageLink: '',
+    figmaLink: 'https://www.figma.com/design/qJeYYJgBf7G2awehDOBNhD/Phoebe\'s-Flowers?node-id=147-194&t=iI4l6Wv4kegUzGlI-1',
+    description: 'Phoebe\'s Flowers original design! See the Coded version for the final product.',
+    index: 1
+  },
+  {
+    title: 'Chartz',
+    imageLink: '',
+    figmaLink: '',
+    description: 'Chartz original design. See the Coded version for the final product.',
+    index: 2
+  },
+  {
+    title: 'Cloud File Storage',
+    imageLink: '',
+    figmaLink: 'https://www.figma.com/design/xzEJVcpkYlH92BfKbDCnei/Digital-Plan-Room?node-id=3-14&t=bYRgJgqrAQuqZg3M-1',
+    description: 'A re-design requested in 2023. Logos are covered up for privacy. My favorite design I\'ve made.',
+    index: 3
+  },
+  {
+    title: 'Chartz',
+    imageLink: '',
+    figmaLink: '',
+    description: '',
+    index: 2
+  },
+  {
+    title: 'Chartz',
+    imageLink: '',
+    figmaLink: '',
+    description: '',
+    index: 2
+  },
 ]
 
 function Home() {
-    const workEmail = 'micapplehunt@gmail.com';
+  const workEmail = 'micapplehunt@gmail.com';
 
   function copyEmailToClipboard() {
     navigator.clipboard.writeText(workEmail)
@@ -79,42 +117,36 @@ function Home() {
         </div>
         <img className='memoji' src={Memoji}></img>
       </div>
-      {/*Introduction End*/}
       {/*About Me*/}
-      <div className='row divider' id='aboutMeSection'>{/*Divider*/}
-        <div className='horizontalLine'></div>
-        <h3>About Me</h3>
-        <div className='horizontalLine'></div>
-      </div>
+      <SectionDivider sectionId='aboutMeSection' name='About Me'></SectionDivider>
       <div className='row aboutMe'>
         <h1 className='handAnimated'>👋</h1>
         <div className='card aboutMeCard'>
           <p>Hi! I’m a software engineer with a passion for <span>web development</span> and <span>UX/UI Design</span>. I hold <span>two bachelor's degrees</span>: one in <span>Computer Science</span> and another in <span>Graphic Design</span>! The majority of my experience is in <span>React, JavaScript, and .NET</span>.</p>
         </div>
       </div>
-      {/*About Me End*/}
       {/*Skills*/}
-      <div className='row divider' id='skillsSection'>{/*Divider*/}
-        <div className='horizontalLine'></div>
-        <h3>Skills</h3>
-        <div className='horizontalLine'></div>
-      </div>
+      <SectionDivider sectionId='skillsSection' name='Skills'></SectionDivider>
       <div className='comingSoonSection'>
         <SkillsSection></SkillsSection>
       </div>
-      {/*Skills End*/}
       {/*Portfolio*/}
-      <div className='row divider' id='portfolioSection'>{/*Divider*/}
-        <div className='horizontalLine'></div>
-        <h3>Coding Portfolio</h3>
-        <div className='horizontalLine'></div>
-      </div>
+      <SectionDivider sectionId='portfolioSection' name='Coding Portfolio'></SectionDivider>
       <div className='projectContainer'>{/*Container*/}
         {data.map((item, i) => (
           <Project key={i} ProjectProps={data[i]}></Project>
         ))}
       </div>
-      {/*Portfolio End*/}
+      {/* Design Portfolio */}
+      <SectionDivider sectionId='designSection' name='Design Portfolio'></SectionDivider>
+      <div className='projectContainer'>
+        {/* {data.map((item, i) => (
+          <Project key={i} ProjectProps={data[i]}></Project>
+        ))} */}
+        <h2 style={{marginBottom: "5rem"}}>Coming Soon!</h2>
+      </div>
+
+      {/* Design Portfolio Ends */}
     </>
   )
 }

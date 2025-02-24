@@ -39,7 +39,7 @@ input {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .main {
@@ -139,23 +139,6 @@ span {
   color: var(--accent-blue);
 }
 
-/* Divider Styles */
-
-.horizontalLine {
-  border-top: 4px solid var(--accent-blue);
-  width: 30%;
-}
-
-.divider {
-  justify-content: space-between;
-  align-items: center;
-  margin: 4rem 0;
-}
-
-.divider>h3 {
-  color: var(--accent-blue);
-}
-
 /* About Me Styles */
 
 .aboutMeCard {
@@ -218,7 +201,6 @@ span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 5rem;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

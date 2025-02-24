@@ -141,8 +141,22 @@
   font-family: 'Poppins-Regular';
 }
 
+/* Divider Styles */
 
+.horizontalLine {
+  border-top: 4px solid var(--accent-blue);
+  width: 30%;
+}
 
+.divider {
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.divider>h3 {
+  color: var(--accent-blue);
+}
 
 
 @media (min-width: 473px) {
