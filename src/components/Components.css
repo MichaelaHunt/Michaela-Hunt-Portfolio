@@ -97,6 +97,68 @@
   pointer-events: none;
 }
 
+/* Skills Section */
+.blueBorder {
+  align-items: center;
+  /* border: 2px dashed var(--accent-blue); */
+  padding: 32px 48px;
+  border-radius: 16px;
+  
+}
+
+.blueBorder > h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-family: 'Poppins-Regular';
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .2);
+  border-radius: 12px;
+  padding: 8px 24px;
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  /* vert than horizontal */
+  justify-content: center;
+  max-width: 1300px;
+  /* margin-bottom: 48px; */
+}
+
+.skillTag {
+  background-color: var(--card-grey);
+  border-radius: 12px;
+  padding: 8px 24px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.skillTag > h3 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Poppins-Regular';
+}
+
+/* Divider Styles */
+
+.horizontalLine {
+  border-top: 4px solid var(--accent-blue);
+  width: 30%;
+}
+
+.divider {
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.divider>h3 {
+  color: var(--accent-blue);
+}
+
+
 @media (min-width: 473px) {
   .projectCard {
     width: 39rem;

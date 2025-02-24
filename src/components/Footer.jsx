@@ -6,7 +6,7 @@ function Footer() {
         <>
             <div className='footerContainer card'>
                 <ul>
-                    <li>Last updated: 01/04/2025</li>
+                    <li>Last updated: 02/23/2025</li>
                 </ul>
             </div>
         </>

@@ -8,7 +8,6 @@ function App() {
       <div className='site'>
         <Header></Header>
           <Outlet />
-        <Footer></Footer>
       </div>
     </>
   );
