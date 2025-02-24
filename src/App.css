@@ -186,15 +186,6 @@ span {
   justify-content: center;
 }
 
-/* .comingSoon {
-  width: 18rem;
-  height: 6rem;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 /* Portfolio Styles */
 
 .projectContainer {
@@ -265,6 +256,28 @@ input:focus, textarea:focus, button:focus {
 .contactMeButton:active {
   background-color: #101010;
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Resume Page */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.resumePage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border: none;
+  width: 75%;
+  height: 2750px;
+  margin-bottom: 48px;
+  overflow-y: hidden;
+}
+
+
+
+
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* Screen Adjustments */
